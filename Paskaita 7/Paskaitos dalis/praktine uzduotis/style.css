@@ -1,0 +1,130 @@
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+}
+
+header img {
+  width: 200px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+h3 {
+  color: white;
+  margin-top: 1px;
+  font-size: 35px;
+}
+
+header div {
+  padding: 0 12rem;
+  text-align: left;
+}
+div nav a {
+  text-decoration: none;
+  color: white;
+  margin: 5px 10px;
+  font-size: 15px;
+}
+div nav {
+  text-align: right;
+  font-size: 10px;
+  padding: 15px;
+}
+
+.yellowbackground {
+  background-color: rgba(189, 168, 4, 0.88);
+}
+.section1 {
+  padding: 0 12rem;
+  text-align: left;
+}
+.section1 p {
+  font-size: 15px;
+}
+
+.button {
+  background-color: red;
+  border: 1px solid white 100%;
+  padding: 5px 30px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  text-decoration: underline;
+  border-radius: 7px;
+}
+.section1 div {
+  text-align: center;
+  padding: 10px;
+}
+
+.section2 {
+  margin-top: 10px;
+  background-color: rgb(3, 3, 49);
+  padding: 20px 0;
+}
+
+h4 {
+  color: white;
+  padding: 0 12rem;
+  font-size: 25px;
+}
+
+.h4black {
+  color: black;
+  padding: 0;
+}
+
+table {
+  color: white;
+  margin: 0 12rem;
+  border-collapse: collapse;
+  width: 80%;
+}
+td {
+  border: 1px solid red;
+  /* padding: 10px; */
+}
+th {
+  border: 1px solid red;
+}
+
+.th1 {
+  padding: 0 10px;
+}
+.th2 {
+  padding: 0 20px;
+}
+
+.td1 {
+  padding: 10px;
+  text-align: center;
+}
+
+.td2 {
+  padding: 10px;
+  text-align: right;
+}
+.section3 {
+  padding: 20px 0;
+  margin: 0 12rem;
+}
+
+.section3 div {
+  text-align: center;
+}
+
+.section3 div a {
+  /* text-decoration: none; */
+  color: blue;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(189, 168, 4, 0.88);
+  margin-top: 15px;
+  padding: 10px 0;
+  color: white;
+}

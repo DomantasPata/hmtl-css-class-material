@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form novalidate action="">
+      <fieldset>
+        <legend>Name</legend>
+        <input hidden type="number" />
+        <label for="password">Password</label>
+        <input
+          required
+          id="password"
+          placeholder="Password..."
+          type="password"
+          autocomplete="new-password"
+        />
+      </fieldset>
+      <fieldset>
+        <input type="text" minlength="2" maxlength="10" />
+        <input type="checkbox" />
+        <input required type="date" />
+        <legend>Kazkas</legend>
+      </fieldset>
+      <input type="email" />
+      <textarea name="" id="" cols="15" rows="5"></textarea>
+      <button type="reset">Clear fields</button>
+      <button type="submit">Submit</button>
+    </form>
+    <input name="test" type="radio" />
+    <input name="test" type="radio" />
+    <input name="test" type="radio" />
+    <input type="radio" />
+    <br />
+    <input type="text" value="+370" />
+    <label for="pasirinkimai">Pasirinkimai</label>
+    <select size="3" name="pasirinkimai" id="">
+      <option value="">Pirmas pasirinkimas</option>
+      <option value="">Antras pasirinkimas</option>
+      <option value="">Trečias pasirinkimas</option>
+    </select>
+    <input type="color" />
+    <br />
+    <input type="file" accept="image/jpeg" multiple />
+    <br />
+    <button>
+      <b>Click me</b>
+    </button>
+    <input type="text" readonly value="kazkoks tekstas" />
+    <input min="2" max="5" type="number" />
+    <input type="range" min="5" max="100" value="100" step="5" />
+  </body>
+</html>

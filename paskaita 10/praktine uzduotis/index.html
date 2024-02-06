@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <form action="">
+        <h1>Register to Fancy Form</h1>
+        <h4>
+          All fields are <span class="pink">required</span> unless marked as
+          "optional"
+        </h4>
+        <h4 class="marginbott0">Your unique ID that you can't change</h4>
+        <input type="text" value="YBX0123" readonly id="grayback" />
+        <h4 class="marginbott0">Email:</h4>
+        <input required class="margintop0 fancy" type="email" />
+        <h4 class="marginbott0">Password:</h4>
+        <input required type="password" class="fancy" />
+        <h4 class="marginbott0">Age:</h4>
+        <input
+          required
+          type="number"
+          class="fancy margintop0 smallwidth diffcolor"
+          min="18"
+          max="65"
+          placeholder=" "
+        />
+        <h4 class="marginbott0">Tell us a little about yourself (optional):</h4>
+        <textarea
+          class="fancy margintop0"
+          name=""
+          id=""
+          cols="24"
+          rows="3"
+          required
+        ></textarea>
+        <div class="margintop">
+          <input type="checkbox" name="" id="mycheckbox" />
+          <label for="mycheckbox">I agree with the Term & Conditions</label>
+        </div>
+        <div>
+          <button class="registerbutton">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

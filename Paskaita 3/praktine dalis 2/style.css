@@ -1,0 +1,10 @@
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(67deg, blue, purple, red);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  box-shadow: 5px 5px 8px lightblue, -5px -5px 8px lightblue;
+}

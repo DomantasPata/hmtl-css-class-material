@@ -1,0 +1,22 @@
+h3 {
+  text-decoration: underline;
+}
+#antrapamoka {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 5;
+  letter-spacing: 2px;
+  color: #aa59f1;
+}
+
+.largeText {
+  color: rgba(100, 50, 99, 0.8);
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto";
+}

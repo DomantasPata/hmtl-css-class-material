@@ -1,0 +1,48 @@
+body {
+  margin: 20px;
+}
+
+.row h3 {
+  display: inline-block;
+}
+
+.greytext {
+  color: rgb(175, 167, 167);
+}
+
+header {
+  border-bottom: 2px solid gray;
+}
+
+div {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: right;
+  display: inline-block;
+}
+
+.alignright {
+  float: right;
+}
+a {
+  color: black;
+  margin: 15px;
+}
+
+.blue {
+  color: rgb(166, 166, 221);
+}
+
+h3 {
+  padding-top: 25px;
+}
+.padding20 {
+  padding: 20px;
+}
+h5 {
+  margin-top: 0;
+}
