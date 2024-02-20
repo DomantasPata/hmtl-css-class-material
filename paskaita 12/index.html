@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="CodeAcademy praktinė užduotis todoApp" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,17 +28,17 @@
         </div>
         <ul class="social-icons">
           <li>
-            <a href="https://www.facebook.com">
+            <a aria-label="Facebook" href="https://www.facebook.com">
               <i class="fab fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.twitter.com">
+            <a aria-label="Twitter" href="https://www.twitter.com">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com">
+            <a aria-label="LinkedIn" href="https://www.linkedin.com">
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
@@ -64,10 +65,16 @@
           <div class="single-task">
             <h5><i class="far fa-check-circle"></i>Take out trashes</h5>
             <div class="task-links">
-              <a href="task.html" class="edit-link">
+              <a aria-label="Edit-link" href="task.html" class="edit-link">
                 <i class="fas fa-edit"></i>
               </a>
-              <button type="button" class="delete-btn" data-id="123">
+              <button
+                role="button"
+                type="button"
+                class="delete-btn"
+                data-id="123"
+                aria-label="Edit"
+              >
                 <i class="fas fa-trash"></i>
               </button>
             </div>
@@ -77,10 +84,16 @@
               <span><i class="far fa-check-circle"></i></span>Walk the dog
             </h5>
             <div class="task-links">
-              <a href="task.html" class="edit-link">
+              <a aria-label="Edit-link" href="task.html" class="edit-link">
                 <i class="fas fa-edit"></i>
               </a>
-              <button type="button" class="delete-btn" data-id="123">
+              <button
+                role="button"
+                type="button"
+                class="delete-btn"
+                data-id="123"
+                aria-label="Edit"
+              >
                 <i class="fas fa-trash"></i>
               </button>
             </div>

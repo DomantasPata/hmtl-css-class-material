@@ -1,0 +1,69 @@
+.boxTransition {
+  background-color: red;
+  width: 200px;
+  height: 300px;
+  border: 3px black solid;
+  /* transition: background-color 5s linear, width 5s ease-in; */
+}
+
+.boxTransition:hover {
+  transition: background-color 5s linear, width 5s ease-in;
+  background-color: aqua;
+  width: 500px;
+}
+
+.boxTransition2 {
+  background-color: blue;
+  width: 200px;
+  height: 300px;
+  border: 3px black solid;
+  animation: rotate 10s linear;
+}
+
+@keyframes rotate {
+  0% {
+    background-color: azure;
+  }
+  25% {
+    rotate: 20deg;
+    background-color: blueviolet;
+  }
+  75% {
+    rotate: 100deg;
+    background-color: brown;
+  }
+  100% {
+    rotate: 360deg;
+    background-color: black;
+  }
+}
+
+.boxTransition3 {
+  background-color: green;
+  width: 200px;
+  height: 300px;
+  border: 3px black solid;
+  animation: changesize 10s linear infinite;
+}
+
+@keyframes changesize {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+    background-color: darkblue;
+  }
+  50% {
+    transform: scale(2);
+    background-color: darkkhaki;
+  }
+  75% {
+    transform: scale(2.5);
+    background-color: coral;
+  }
+  100% {
+    transform: scale(3);
+    background-color: goldenrod;
+  }
+}
