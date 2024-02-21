@@ -1,0 +1,338 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  margin: 40px 400px;
+}
+
+header img {
+  width: 50px;
+}
+
+.headerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seconddiv {
+  display: flex;
+  align-items: center;
+}
+
+.navleft {
+  align-items: center;
+  /* margin-right: 1px; */
+}
+.navleft a {
+  text-decoration: none;
+  color: rgb(12, 12, 48);
+  justify-content: space-between;
+  padding-right: 20px;
+  font-weight: bold;
+}
+.navleft a:hover {
+  text-decoration: underline;
+}
+
+header button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: rgb(12, 12, 48);
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 40px;
+}
+header button:hover {
+  background-color: orangered;
+}
+
+.sectionflex {
+  display: flex;
+}
+
+.section1 {
+  margin: 50px 50px 50px 400px;
+  width: 10%;
+}
+
+.padding {
+  width: 300px;
+}
+
+.section1 h1 {
+  color: rgb(21, 21, 86);
+  font-weight: bold;
+}
+
+.section1 p {
+  color: gray;
+}
+
+.section1 button {
+  background: linear-gradient(to right, rgb(243, 122, 23), orangered);
+  /* background-color: orangered; */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.section1 button:hover {
+  background: orangered;
+}
+
+.imgsize400 {
+  position: relative;
+  top: 50px;
+  left: 250px;
+  width: 500px;
+  border-radius: 10px;
+  height: 300px;
+  z-index: 2;
+}
+.imgsize200 {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  position: relative;
+  top: 280px;
+  left: 120px;
+  z-index: 3;
+}
+.background2colors {
+  background: linear-gradient(
+    to bottom right,
+    rgb(240, 228, 217),
+    rgb(211, 243, 247)
+  );
+  width: 250px;
+  height: 370px;
+  position: relative;
+  top: 10px;
+  left: 1px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.section2div {
+  background: linear-gradient(
+    to bottom right,
+    rgb(240, 228, 217),
+    rgb(211, 243, 247)
+  );
+  width: 1103px;
+  height: 270px;
+  margin: 150px 400px;
+  border-radius: 10px;
+}
+
+.section2div p {
+  text-align: center;
+  padding: 50px;
+  color: rgb(21, 21, 86);
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+
+.divwithimg {
+  display: flex;
+  margin: 0 20px;
+  /* width: 130px; */
+  /* justify-content: center; */
+  /* padding: 0 50px; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section2div img {
+  width: 100px;
+  /* height: 30px; */
+  padding: 0 50px;
+  /* align-items: center; */
+}
+
+.section3 {
+  margin: 100px 400px;
+  display: flex;
+}
+
+.divsection3 h1 {
+  width: 80%;
+  color: rgb(21, 21, 86);
+}
+
+.divsection3 img {
+  width: 550px;
+  height: 500px;
+  border-radius: 10px;
+  margin-right: 80px;
+}
+
+.greyp {
+  color: gray;
+}
+
+.bordertop {
+  border-top: 1px solid gray;
+  margin-right: 20px;
+  height: 220px;
+}
+
+.bordertop i {
+  padding: 15px 0;
+}
+.pcard {
+  padding-top: 5px;
+  margin-top: 0px;
+  color: rgb(21, 21, 86);
+  font-weight: 800;
+}
+
+.divgrid {
+  display: grid;
+  grid-column: 1 / span 1;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+}
+
+.divgrid button {
+  background: linear-gradient(to right, rgb(243, 122, 23), orangered);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  width: 130px;
+}
+
+.section4 {
+  background: linear-gradient(
+    to bottom right,
+    rgb(240, 228, 217),
+    rgb(211, 243, 247)
+  );
+  padding: 100px 400px;
+}
+
+.section4 h1 {
+  color: rgb(21, 21, 86);
+  text-align: center;
+  font-weight: bold;
+}
+
+.section4div {
+  display: flex;
+  padding-top: 20px;
+}
+.section4div img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.wrapflex {
+  flex-wrap: nowrap;
+  width: auto;
+  background-color: white;
+  margin-right: 15px;
+  border-radius: 10px;
+  min-width: 280px;
+  max-width: 280px;
+}
+
+.wrapflex img {
+  width: 100%;
+}
+
+.pcard2 {
+  padding: 17px;
+  margin: 0px;
+  color: rgb(21, 21, 86);
+  font-weight: 800;
+}
+
+.greyp2 {
+  color: gray;
+  padding: 17px;
+  margin: 0px;
+}
+
+.buttonreadall {
+  background: transparent;
+  color: rgb(21, 21, 86);
+  font-weight: bold;
+  border: 0.5px solid gray;
+  border-radius: 20px;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 50px 0px;
+  font-size: 15px;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.buttonreadall:hover {
+  background-color: orangered;
+}
+
+.section5 {
+  padding: 100px 400px;
+  background-image: url(https://i.natgeofe.com/k/d35924f6-5eb8-4560-9230-cc330e5faa75/deserts-camel-sahara_16x9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+.section5 div {
+  text-align: center;
+  color: white;
+}
+
+.section5 button {
+  background: linear-gradient(to right, rgb(243, 122, 23), orangered);
+  /* background-color: orangered; */
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+footer {
+  border-top: 1px solid rgb(204, 196, 196);
+  margin: 10px 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  margin-top: 30px;
+  color: rgb(173, 163, 163);
+}
+
+footer i {
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.marginp {
+  margin: 0px 350px;
+  color: white;
+}
+
+.marginp2 {
+  margin: 30px 350px;
+  color: rgb(245, 233, 233);
+}
