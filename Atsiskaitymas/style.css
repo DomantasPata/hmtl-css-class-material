@@ -1,11 +1,11 @@
 * {
   font-family: "Roboto", sans-serif;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 .grid {
   display: grid;
@@ -27,16 +27,34 @@ body {
 .launchingSoonimg {
   grid-column: 6/9;
 }
-.launchingSoonimg img {
-  width: 200%;
+.banner-image img {
+  max-width: 100%;
 }
-.displayNav {
+.banner-image2 img {
+  max-width: 100%;
+  padding-left: 200px;
+}
+
+.container i {
   display: none;
 }
 
 .hamburger {
   font-size: 25px;
   color: gray;
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding-right: 15px;
+}
+nav a:nth-child(4) {
+  color: #ff3998;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
 .firstSection {
@@ -44,44 +62,62 @@ body {
   padding: 0 30px;
 }
 
-.firstSection h5 {
+.main-inner h5 {
+  color: #ff3998;
+}
+
+.main-inner2 h5 {
   color: #ff3998;
 }
 
 button {
-  background-color: transparent;
-  border-radius: 50px;
-  padding: 15px 40px;
+  padding: 2px;
+  position: relative;
   color: black;
-  border: 3px solid orangered;
+  border: 0;
+  border-radius: 50px;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
+  background-image: url(assets/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: (to top-righ); */
+}
+
+button div {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 15px 40px;
 }
 
 .secondSection {
+  padding: 50px 30px 15px 15px;
+  text-align: left;
   background-image: url(assets/background.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 50px;
+  border-radius: 10px;
 }
 
-.secondSection div {
-  padding: 50px 30px 15px 15px;
-  text-align: left;
-}
 .secondSection h1 {
   font-weight: 600;
 }
 
 .thirdSection {
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 50px 0px !important;
+  /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .thirdSection img {
+  min-width: 150px;
+  max-width: 150px;
   width: 150px;
   height: 55px;
 }
@@ -98,7 +134,7 @@ button {
   font-weight: 500;
 }
 
-.fourthSection span {
+span {
   text-decoration: underline;
   font-weight: 500;
 }
@@ -112,11 +148,13 @@ button {
   width: fit-content;
   border-radius: 15px;
   background-color: #eeeeee;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  min-width: 240px;
 }
 
 .card img {
-  background-size: cover;
+  max-width: 100%;
+  width: 100%;
 }
 
 .cardgrid {
@@ -192,9 +230,10 @@ button {
   margin-right: 10px;
 }
 
-.flexFooterdiv {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.flex-last-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 
 ul {
@@ -207,6 +246,101 @@ li {
 }
 
 .copyright {
+  display: flex;
+  justify-content: space-between;
   color: #999999;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #eeeeee;
+}
+.bottom-border div {
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  /* .mobile-banner{
+      background-size: 200px 100px;
+      background-image: url(assets/graphic.svg);
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-attachment: fixed;
+  } */
+  .banner-image-mobile {
+    position: relative;
+    overflow: hidden;
+  }
+  .banner-image-mobile2 {
+    position: relative;
+    overflow: hidden;
+    /* height: 400px;
+    margin-top: 30px; */
+  }
+  div.mobile-banner {
+    position: relative;
+    z-index: 1;
+    padding-right: 100px;
+  }
+  div.mobile-banner2 {
+    position: relative;
+    z-index: 1;
+    padding-right: 250px;
+    padding-right: -20px;
+  }
+
+  .banner-image-mobile::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50%;
+    bottom: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(assets/graphic.svg);
+    background-size: contain;
+    background-position: center;
+    z-index: 0;
+  }
+  .banner-image-mobile2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20%;
+    bottom: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(assets/upsell-footer-image.svg);
+    background-size: contain;
+    background-position: center;
+    z-index: 0;
+  }
+  .displayNav {
+    display: none;
+  }
+  .container i {
+    display: block;
+  }
+  .thirdSection {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .thirdSection div:nth-child(5) {
+    display: none;
+  }
+  .flexFooterdiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .secondSection {
+    border-radius: 0;
+  }
+  section.mobile-remove-padding {
+    padding: 0;
+  }
 }
